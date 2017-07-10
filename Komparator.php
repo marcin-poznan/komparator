@@ -12,6 +12,7 @@ class Komparator
             echo $ex->getMessage();
         }
 
+        $this->pdo->exec("SET CHARACTER SET utf8");
         $statement = $this->pdo->prepare("SELECT * FROM my_data");
         $statement->execute();
         $internalData = $statement->fetchAll(PDO::FETCH_ASSOC);
