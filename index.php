@@ -17,5 +17,7 @@ foreach ($check as $key => $val) {
     echo "<br>";
 }
 
+echo "this is new added text";
+
 $bench->end();
 echo $bench->getTime();
