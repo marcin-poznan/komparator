@@ -12,6 +12,8 @@ $externalRows = $komparator->loadExternalData("./data.json");
 
 echo "another feature change";
 
+echo "test next";
+
 $check = $komparator->check();
 
 foreach ($check as $key => $val) {
