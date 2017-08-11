@@ -10,6 +10,8 @@ $komparator = new Komparator();
 $dbRows = $komparator->loadInternalData("localhost", "test", "root", "tajne123");
 $externalRows = $komparator->loadExternalData("./data.json");
 
+echo "another feature change";
+
 $check = $komparator->check();
 
 foreach ($check as $key => $val) {
